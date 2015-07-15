@@ -4,9 +4,7 @@ python:
 before_install:
 - openssl aes-256-cbc -K $encrypted_1eab5b2cc1f9_key -iv $encrypted_1eab5b2cc1f9_iv
   -in id_rsa_deploy.enc -out ~/.ssh/id_rsa_deploy -d
-- cat ~/.ssh/id_rsa_deploy
 - chmod 600 ~/.ssh/id_rsa_deploy
-- ls -lah ~/.ssh/
 - eval `ssh-agent -s`
 - ssh-add ~/.ssh/id_rsa_deploy
 install:
