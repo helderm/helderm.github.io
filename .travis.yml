@@ -3,7 +3,7 @@ python:
 - '2.7'
 before_install:
 - openssl aes-256-cbc -K $encrypted_1eab5b2cc1f9_key -iv $encrypted_1eab5b2cc1f9_iv
-  -in id_rsa.enc -out ~/.ssh/id_rsa -d
+  -in id_rsa_deploy.enc -out ~/.ssh/id_rsa -d
 - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - chmod 600 ~/.ssh/id_rsa
 - eval `ssh-agent -s`
