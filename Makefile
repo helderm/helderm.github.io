@@ -112,7 +112,7 @@ travis: publish
 	git config --global user.email "heldergaray@gmail.com"
 	git config --global user.name "Helder Martins"
 	git remote add publish https://$(GH_TOKEN)@github.com/helderm/helderm.github.io.git || true
-	git pull publish $(GITHUB_PAGES_BRANCH)
+	git reset publish/$(GITHUB_PAGES_BRANCH)
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) -r publish $(OUTPUTDIR)
 	git push publish $(GITHUB_PAGES_BRANCH)
 
