@@ -110,6 +110,7 @@ github: publish
 
 travis: publish
 	git remote add publish https://$(GH_TOKEN)@github.com/helderm/helderm.github.io.git || true
+	git fetch publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) -r publish $(OUTPUTDIR)
 	git push publish $(GITHUB_PAGES_BRANCH)
 
