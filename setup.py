@@ -1,5 +1,12 @@
 import setuptools
 
+def get_requirements(file_name='requirements.txt'):
+    filename = open(file_name)
+    lines = [i.strip() for i in filename.readlines()]
+    filename.close()
+    return lines
+
+
 setuptools.setup(
     name="blog",
     version="0.1.0",
@@ -13,7 +20,7 @@ setuptools.setup(
 
     packages=setuptools.find_packages(),
 
-    install_requires=[],
+    install_requires=get_requirements(),
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',

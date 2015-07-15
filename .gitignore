@@ -38,6 +38,7 @@ nosetests.xml
 # dev virtualenv
 devenv
 
-# Pelican folders
+# Pelican files
 output/*
 cache
+*.pid
