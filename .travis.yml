@@ -1,6 +1,9 @@
 language: python
 python:
-    - "2.7"
+- '2.7'
 install:
-    - "pip install -r requirements.txt"
-script: "make github"
+- pip install -r requirements.txt
+script: make travis
+env:
+  global:
+    secure: mqal5mZfBj2Py7HBxins5hBZRlBxdi90xkoTj1cJlnLjjh+qK0dP4CQ/2j99+K3KgbaYUGRoAOjzbKdJyx6JHZJ+8zP8KjiWPatp0sDO9fZUaLMETELRWIhCPvrBBGCC57gqWbtTbePxSZLRVL8nCj/wBz6jeUCM18PoUUYxfjCVXs77/qqbQjEqH4LzpgeZm/mzYPdyvXjvr/wKMxva0PGodixMywWcjLTCHhUPtTauG5HF5zjYrUTlfmSjq1Je4NKZgLNP7itDmQYeprdUNL+6gXaAosgfdGXi4OkwVMYGbtsrNEGtCA3I6MpNKzX45/4f0eK8z1aRqhqqO8xPvc1jxsCukzUZ8A5blmsR/W/TpFr7ulJCd0S1v7xN0sUWCVydT6krjjiTysWAUvj1pZXjRbeBClDrM4VUgpXAs8A792Oz3Jx9h5YZzQHZpLW+DLwv9TTDUVBb2JGgJAea92/zK8FBZ/8xEU+CujhY/g990iXauYB5/lQax+PGw/tNXDa+Hdv3042dgjjrfN0SnqBLTeJyGZET+he9ApcnN/C8p/MEwcv982IAg0OVE8IOd5N6TmUvPdbYLlQkOFkLvtNq59AAwcV81KwPBxktpWAKNpvhXczxrYHmSIrZkcDx38NQsGBA5Z669cSb+C3WLBFELJB39h9+7qrQWBVSCEk=
