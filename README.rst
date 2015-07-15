@@ -9,7 +9,7 @@ helderm-blog
    :target: NoTravis
    :alt: Latest Travis CI build status
 
-My personal tech deviations
+My personal deviations
 
 Usage
 -----
