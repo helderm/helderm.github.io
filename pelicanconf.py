@@ -34,3 +34,14 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# Themes Options (html5-dopetrope)
+THEME = './themes/html5-dopetrope'
+MAIL = 'heldergaray@gmail.com'
+TWITTER_USER = 'heldergaray'
+GOOGLEPLUS_USER = '108735776655822151608'
+#LINKEDIN_USER = 'helderm'
+FACEBOOK_USER = 'heldergaray'
+ABOUT_TEXT = 'A place where I can ramble about technology and living abroad.'
+ABOUT_IMAGE = 'theme/images/profile.jpg'
+# ABOUT_LINK : Will add a link under the ABOUT_TEXT page
