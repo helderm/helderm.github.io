@@ -20,10 +20,10 @@
 	body
 	{
 		font-family: 'Source Sans Pro';
-		font-weight: 300;
+		font-weight: 350;
 		background: #252122;
 		background-image: url('images/bg02.png');
-		color: #5d5d5d;
+		color: #373737;
 	}
 
 	strong, b
@@ -35,7 +35,7 @@
 	h1, h2, h3, h4, h5, h6
 	{
 		color: #252122;
-		font-weight: 700;
+		font-weight: 800;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
