@@ -2,6 +2,7 @@ Title: Norway Fjords Trip: the Plan
 Date: 2016-04-04 22:20
 Modified: 2016-04-06 19:30
 Category: Travel
+Summary: All about the hiking trip plan to the Norway fjords that will happen this summer
 Status: published
 
 ### General tips
