@@ -55,6 +55,13 @@
 			text-decoration: none;
 		}
 
+	li
+	{
+		color: #252122;
+		font-weight: 700;
+	}
+
+
 	.major
 	{
 		position: relative;
