@@ -1,5 +1,5 @@
 Title: About
-Status: published
+Status: hidden
 
 've always been the nerdy kind of guy. I've been tinkering with computers since the time that we had to plug them on the TV, if we can call that a computer at all. Even though my main reason at that time for my curiosity was to play new games on that strange little box, that inadvertently started a slowly growing passion for technology that is still going strong today.
 
