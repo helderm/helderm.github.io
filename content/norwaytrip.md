@@ -1,65 +1,144 @@
 Title: Norway Fjords Trip: the Plan
 Date: 2016-04-04 22:20
-Modified: 2016-04-06 19:30
+Modified: 2016-04-17 16:30
 Category: Travel
 Summary: All about the hiking trip plan to the Norway fjords that will happen this summer
 Status: published
 
+### The plan
+
+* When?
+
+From 2016-08-13 to 2016-08-17
+
+* Where?
+
+Stavanger -> Preikestolen -> Kjerat -> Trolltunga -> Stavanger
+
+* How?
+
+By car, camping in the wild or in camping sites.
+
+
 ### General tips
 
-* We can camp almost anywhere in Norway. If accomodation is a price issue, we can always pitch our tents somewhere in the wild and save some money.
+We can camp almost anywhere in Norway. If accomodation is a price issue, we can always pitch our tents somewhere in the wild and save some money.
 
-* Transportation seems to be the greatest of the trip costs. Some one-way bus tickets can cost more than 100 NOK for a small stretch. Hitchhiking whenever possible should save us a lot of money, so we should be prepared for that.
+The idea is to move as close as possible to the next hike the night before, so we can wake up early and go straight to the trail.
 
-* With enough people, a car could be a better idea than taking the bus everywhere. Some ferry trips may be cheaper, and the busses are so expensive that it may be worth it. I could find for 6 days at the end of August for 3000 NOK, which is reasonable.
+### Day 0: Stockholm (2016-08-12)
 
-* The idea is to move as close as possible to the next hike the night before, so we can wake up early and go straight to the trail.
+* Stockholm -> Oslo ([tickets](https://www.sj.se/travel/booksearchlocation.form))
 
-### Day 1: Stavanger
+Departs 16h, arrives 21h
+
+* Oslo -> Stavanger ([tickets](https://www.nsb.no/en/frontpage))
+
+Departs 22h15, arrives 7h (check this again!)
+
+### Day 1: Stavanger (2016-08-13)
 
 ![alt text][stavanger]
 
-* The starting point of the trip is the city of [Stavanger](https://goo.gl/maps/YFr8Fj3whop]). There are two main ways to get here: by [train](https://goo.gl/7xP6nc) coming from Oslo or by [plane](https://goo.gl/BHLNxd). A good discount can be obtained by students if travelling by train, the total cost for the 2-way trip from Stockholm cost around 1000 NOK.
+The starting point of the trip is the city of [Stavanger](https://goo.gl/maps/YFr8Fj3whop]). There are two main ways to get here: by [train](https://goo.gl/7xP6nc) coming from Oslo or by [plane](https://goo.gl/BHLNxd).
 
-* This is a good spot to buy supplies for the trip, so don't forget to buy food etc. before leaving 
+First thing to do is to get the car from the car rental company.
 
-* A good option for camping would be [Preikestolen Camping](http://goo.gl/gQcwmu), which has a fairly inexpensive (or so it seems) price if you bring you own tent (40 NOK, + 40 NOK for eletricity).
+Buy supplies for the trip (food etc.)
 
-* We should take a bus to Jørpeland, that trip takes about 2h. Bus timetables can be checked [here](https://goo.gl/iJ3h8). The website doesn't tell me how much the ticket costs, but I read somewhere that it was around 150 NOK. Probably a ferry trip to Tau will be involved, around 47 NOK one way.
+Move to [Preikestolen Camping](http://goo.gl/gQcwmu) or somewhere nearby if we plan to camp in the wild.
 
-* Hitchhiking from Stavanger to Preikestolen should be easy. We could stop by the ferry boat and try our luck. Maybe we can get a ride to Tau and from there move down to Jørpeland.
+### Day 2: [Preikestolen] (2016-08-14)
 
+![alt text][preikestolen_img]
 
-### Day 2: Preikestolen
+Wake up early and start packing! Follow the signs and find the trail. The hike should last about 6h, so prepare everything before leaving.
 
-![alt text][preikestolen]
+Enjoy the nature, relax, take some cool photos!
 
-* Wake up early and start packing! Follow the signs and find the trail. The hike should last about 6h, so prepare everything before leaving.
+After that, we move closer to our next hike, Kjerag, thorough the ferry line Lysebotn-Forsand, which costs around 705 NOK for a car + passengers, might be a good option since the view seems to be amazing! More info about the ferry [here](https://goo.gl/Uw6M7Z). Ferry departs at 9h and 15h10, and the trip is 2h30 long. **Pay attention to the time!**
 
-* Enjoy the nature, relax, take some cool photos!
+We can camp at [Lysebotn Tourist Camp] but it has low reviews in Trip Advisor and an expensive price, so it might be better to camp in the wild.
 
-* After that, we move closer to our next hike, Kjerag. The closest camping that I found is [this one](http://goo.gl/nXHDll). The price is a bit confusing, it says 220 NOK for a car and a 2-person tent, so I'd expect way less than that.
+### Day 3: [Kjerag] (2016-08-15)
 
-* The bus to Kjerag is turning to be a challenge to find. The only one that I found was a [coach bus](http://www.tidereiser.com/hikingtour-kjerag#attached-page-toggler-tourlist) from Stavanger which costs 550 NOK per person, kinda expensive. Hitchhiking might be an option here. A post about this trip can be found [here](https://goo.gl/Y3xb9R). The bus departs at 7h30m, arrives at Øygardstøl at 11h, and departs at 16h45.
+![alt text][kjerag_img]
 
-* There is a public bus that goes from Botne to Forsand, and there is a ferry line Lysebotn-Forsand that we could use. The bus line is 108, and the stop is Forsand Kai. The Lysebotn-Forsand ferry trip costs 300 NOK per person one way, or 705 NOK for a car + passengers, might be a good option since the view seems to be amazing! More info about the ferry [here](https://goo.gl/Uw6M7Z). A good strategy might be to go to the ferry and try to hitchike our way to Lysebotn. Ferry departs at 9h and 15h10, and the trip is 2h30 long.
+Wake up early, pack all our stuff, and go straight to Kjerag! It is a hard hike, so prepare acordingly.
 
-### Day 3: Kjerag
+Next stop is Trolltunga. We must get to Odda somehow from Lysebotn. One option is to go to Songesand through the Lysebotn-Songesand ferry and take road FV661, and then take RV13 up until Hjelmeland. From there, take the Nesvik-Hjelmeland ferry to Nesvik, and continue through RV13. After 150km we get to Odda.
 
-![alt text][kjerag]
+[Odda Camping] is quite close to the hike, but I couldn't find the price. Reviews from TripAdvisor say it is cheap though.
 
-* Wake up early, pack all our stuff, and go straight to Kjerag! It is a hard hike, so prepare acordingly.
+### Day 4: [Trolltunga] (2016-08-16)
 
-* Next stop is Trolltunga. We must get to Odda somehow from Lysebotn. One option is to go to Songesand through the Lysebotn-Songesand ferry and take road FV661, and then take RV13 up until Hjelmeland. From there, take the Nesvik-Hjelmeland ferry to Nesvik, and continue through RV13. After 150km we get to Odda.
+![alt text][trolltunga_img]
 
-* We could try to get a ride in one of the ferries, but I think we would need to be very lucky to get something from Lysebotn to Odda. Maybe we could hithchike to Tau since it is a larger city.
+Wake up *very* early, pack all our stuff, and go!
 
-### Day 4: Trolltunga
+This hike is 22km long! It will take around 11h to get there and back, so be prepared!
 
-![alt text][trolltunga]
+I would say that after this hike we will be totally exhausted, so we should plan for a rest.
+
+Now we should decide, shall we move forward or go back? We could go north for another hike, but we may end up going too far from Stavanger where we should return the car. So the initial idea is to go back to Stavanger.
+
+Camp somewhere for the night.
+
+### Day 5: Stavanger (2016-08-17)
+
+Take the [route](https://goo.gl/maps/Rg8R8EN3Pu82) from Odda to Stavanger, take the ferry at Arsvågen to Mortavika.
+
+Take the train or plane back. Reflect about how awesome this trip was.
+
+### Estimated Costs
+
+* Transportation
+
+Train ticket Stockholm -> Oslo: 33 EUR (student)
+
+Train ticket Oslo -> Stavanger: 27 EUR
+
+Car rental: 50 EUR (4 days, total 200 EUR)
+
+Fuel: 20 EUR (50L * 1.6 EUR/L, total 80 EUR)
+
+Ferry Stavanger -> Tau: 8.5 EUR (155 NOK car + driver, 52 NOK per extra person)
+
+Preikestolen parking: 2 EUR (8 EUR total)
+
+Ferry Forsand -> Lysebotn: 20 EUR (700 NOK for the car pack(?))
+
+Parking Øygardstøl: ???
+
+Ferry Lysebotn -> Songesand / Forsand: ???
+
+Ferry Nesvik -> Hjelmeland: 4.5 EUR (73 NOK car + driver, 30 NOK per extra person)
+
+Ferry Mortavika -> Arsvågen (way back): ???
+
+* Accomodation
+
+Preikestolen Camping: 7 EUR (200 NOK car + tent, 40 / tent)
+
+[Lysebotn Tourist Camp] : 7 EUR (260 NOK car (?))
+
+[Odda Camping] : ???
+
+* Other
+
+Camping gear: ???
+
+Food: ???
+
 
 
 [stavanger]: {filename}/images/stavanger.jpg "Stavanger"
-[preikestolen]: {filename}/images/preikestolen.jpg "Preikestolen"
-[kjerag]: {filename}/images/kjerag.png "Kjerag"
-[trolltunga]: {filename}/images/trolltunga.png "Trolltunga"
+[preikestolen_img]: {filename}/images/preikestolen.jpg "Preikestolen"
+[Preikestolen]: http://www.visitnorway.com/listings/hike-to-preikestolen-%28pulpit-rock%29/8904/
+[kjerag_img]: {filename}/images/kjerag.png "Kjerag"
+[Kjerag]: http://www.visitnorway.com/listings/kjerag-hike/12546/
+[trolltunga_img]: {filename}/images/trolltunga.png "Trolltunga"
+[Trolltunga]: http://www.visitnorway.com/listings/trolltunga/8625/
+[link text itself]: http://www.reddit.com
+[Lysebotn Tourist Camp]: https://www.tripadvisor.com/Hotel_Review-g1501063-d3229311-Reviews-Kjerag_Lysebotn_Camping_Resort-Lysebotn_Forsand_Municipality_Rogaland_Western_Norway.html
+[Odda Camping]: http://www.visitnorway.com/listings/odda-camping/1285/
