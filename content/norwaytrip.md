@@ -94,9 +94,9 @@ Take the train or plane back. Reflect about how awesome this trip was.
 
 * Transportation
 
-Train ticket Stockholm -> Oslo: 33 EUR (student)
+[Train ticket](https://www.sj.se/en/home.html#/tidtabell/Stockholm%2520C/Oslo%2520S/ToR/avgang/20160812-0600/avgang/20160817-1500/ST///0//) Stockholm <-> Oslo: 55 EUR (student)
 
-Train ticket Oslo -> Stavanger: 27 EUR
+Train ticket Oslo <-> Stavanger: 54 EUR (student)
 
 Car rental: 50 EUR (4 days, total 200 EUR)
 
