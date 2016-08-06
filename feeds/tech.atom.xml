@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>CHANGELOG</title><link href="helderm.org/" rel="alternate"></link><link href="helderm.org/feeds/tech.atom.xml" rel="self"></link><id>helderm.org/</id><updated>2016-04-07T22:20:00+02:00</updated><entry><title>Publishing a blog with Pelican</title><link href="helderm.org/publishing-a-blog-with-pelican.html" rel="alternate"></link><published>2016-04-07T22:20:00+02:00</published><author><name>Helder Martins</name></author><id>tag:,2016-04-07:helderm.org/publishing-a-blog-with-pelican.html</id><summary type="html">&lt;p&gt;I consider myself a practical kind of guy. So when I sought a way of publishing my personal space on the web, I searched for tools that did the job without much hassle, and that did offer some sort of customizations. Being a Python programmer by heart, I ran into this very nice static site generator called &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;, and instantly fell with in love with it. So what would be a better first post than telling how I set this blog up! I'll be covering here the two main tools that I used: Pelican to generate the site and &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; to host it. Just so you know, I'll assume that you're using a Linux enviromnent here, doing the same in Windows might be considerably more complex.&lt;/p&gt;
+&lt;h3&gt;Create your own blog using Pelican&lt;/h3&gt;
+&lt;p&gt;First off, you'll need to install Pelican through &lt;a href="https://pip.pypa.io/en/stable/"&gt;Pip&lt;/a&gt;. Even though you can install the package in your computer, I would advise installing it inside a &lt;a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/"&gt;virtualenv&lt;/a&gt;. That way all the required packages will be installed inside a separate folder that you can easily remove later, and also they won't mess with the ones you have already installed in your operating system.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install virtualenv
+$ mkdir blog/ &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; blog/
+$ virtualenv devenv/blog
+$ &lt;span class="nb"&gt;source&lt;/span&gt; devenv/blog/bin/activate
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;These commands will install, create and activate a new virtualenv called &lt;code&gt;blog&lt;/code&gt;. Now every Python package will be seamlessly installed inside this special folder until you deactivate it.
+Now we can safely install Pelican packages so we can quickstart our blog.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ pip install pelican markdown
+&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ pelican-quickstart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This will ask several questions about your blog. Answer with your personal data, use the default setting for the ones you are unsure of. When it asks you if you want to publish through GitHub Pages, answer as follows:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt; Do you want to upload your website using GitHub Pages? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; Y
+&amp;gt; Is this your personal page &lt;span class="o"&gt;(&lt;/span&gt;username.github.io&lt;span class="o"&gt;)&lt;/span&gt;? &lt;span class="o"&gt;(&lt;/span&gt;y/N&lt;span class="o"&gt;)&lt;/span&gt; Y
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This will create all necessary files to get your blog up and running. To test if everything is running smoothly, write a sample blog page using Markdown and check the resulting HTML.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;%s\n%s\n\n%s\n&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Title: My title&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Date: 2010-12-03 10:20&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="s1"&gt;&amp;#39;My content.&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; content/helloworld.md
+&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ make html serve
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The first command will create a file in Markdown format with a sample blog post under the folder &lt;code&gt;content&lt;/code&gt;. The second one will create the HTML and serve it under the default port (8000). Open up your web browser and go to the URL at &lt;code&gt;localhost:8000&lt;/code&gt;, if everything is working correctly you should see your blog with the default theme of Pelican and the blog post that we created before. If you didn't like this theme, you can always check for some others at &lt;a href="http://www.pelicanthemes.com/"&gt;Pelican Themes&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Hosting it on GitHub Pages&lt;/h3&gt;
+&lt;p&gt;Now it is time to think how we are going to publish this code online. &lt;a href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt; is a fantastic tool where we can easily do that with a simple &lt;code&gt;git push&lt;/code&gt; to a branch, so that is what we are going to use here.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a GitHub pages repository &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go to your GitHub account page and create a repository called &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt;, where &lt;code&gt;&amp;lt;username&amp;gt;&lt;/code&gt; is your GitHub username. This is where all your source and output files will be stored.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up Git for your blog and upload some content&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One thing to keep in mind here is that the &lt;code&gt;master&lt;/code&gt; branch in your github.io repository is where the files which are going to be published will be stored. That is, all your HTML, CSS, images, etc. Since we are using another tool to generate these files, it makes sense to store our source code into another branch, and when it is time to publish we generate all the HTML and upload to the &lt;code&gt;master&lt;/code&gt; branch. So here we are going to use the branch &lt;code&gt;content&lt;/code&gt; to store all our source code as follows.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ make clean
+&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ git init
+&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ git checkout -b content
+&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ git add .
+&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ git commit -m &lt;span class="s1"&gt;&amp;#39;Initial commit&amp;#39;&lt;/span&gt;
+&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ git remote add origin https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io.git
+&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ git push origin content
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Use here your GitHub username and password. Now our code is securely stored, but we still didn't publish it yet. For that to happen, we need to upload all files in the &lt;code&gt;output&lt;/code&gt; folder (the one created after the &lt;code&gt;make html&lt;/code&gt;) to the &lt;code&gt;master&lt;/code&gt; branch in our GitHub Pages repository. To simplify this, I'll use a tool called &lt;code&gt;ghp-import&lt;/code&gt; which allows us to do it pretty easily.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ pip install ghp-import
+&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ make github
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After pushing your code, wait some seconds and visit &lt;code&gt;http://&amp;lt;username&amp;gt;.github.io&lt;/code&gt;, check how your blog is up and running! &lt;/p&gt;
+&lt;p&gt;Yeah, but things are not that simple. You may have noticed that we ended in the &lt;code&gt;master&lt;/code&gt; branch, but you really don't want to work directly on it. But since the &lt;code&gt;master&lt;/code&gt; and the &lt;code&gt;content&lt;/code&gt; branch are not really based on one another, changing back and forth between both can be a huge headache, one that I wouldn't want to have every time that I publish my blog. Automating this publishing process (using a tool like &lt;a href="https://travis-ci.org/"&gt;Travis&lt;/a&gt;, for example) is the answer for this, and that will be covered in another post. For now, disregard the &lt;code&gt;master&lt;/code&gt; branch and pull the code again from GitHub before moving forward.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ deactivate &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; .. &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; rm -fr blog/
+$ git clone https://github.com/&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io.git blog
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; blog/ &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; virtualenv devenv/blog
+$ &lt;span class="nb"&gt;source&lt;/span&gt; devenv/blog/bin/activate
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Setting up your code nicely&lt;/h3&gt;
+&lt;p&gt;What if you want to write to your blog from another machine, or you wipe your hard drive, or &lt;em&gt;gasp&lt;/em&gt; your PC is stolen? You don't want to set up all this again now, do you? Now we will delve into some good practices with Python that will help you to avoid some headaches in the future.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Define the required packages of your project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When we are using Pip as a package manager, it is pretty standard to declare the list of depencies of a project in a file called &lt;code&gt;requirements.txt&lt;/code&gt;. Everything that we manually installed through &lt;code&gt;pip install&lt;/code&gt; (that is, the dependecies of our project so far) should be explicited listed in this file, so you (and someone else, if this a shared blog) will know what to install when creating content for the blog. Note that I excluded the package &lt;code&gt;virtualenv&lt;/code&gt; because it is not REALLY a dependency of the project, think of it more like a tool that you will want to have installed in your machine for other Python apps that you might create.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;%s\n%s\n%s\n&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;pelican&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;markdown&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="s1"&gt;&amp;#39;ghp-import&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; requirements.txt
+&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ pip install -r requirements.txt
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now everytime you want to recreate your virtualenv, a simple &lt;code&gt;pip install -r requirements.txt&lt;/code&gt; will install in it all dependencies of the blog, so you can start coding again quickly.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Avoid getting junk files into the repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some files in your repository directory shouldn't be on git, like the virtualenv that we just created, the files that we can generate from our source or some files that Pelican creates when you debug your code, for example. To avoid sending them to your remote repository, create a &lt;code&gt;.gitignore&lt;/code&gt; file as follows:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ &lt;span class="nb"&gt;printf&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;%s\n%s\n%s\n%s\n&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;devenv/&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;output/*&amp;#39;&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="s1"&gt;&amp;#39;cache&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;*.pid&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; .gitignore
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Finally, commit both these files and push to your repository.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ git add .gitignore requirements.txt
+&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ git commit -m &lt;span class="s1"&gt;&amp;#39;Adding gitignore and requirements&amp;#39;&lt;/span&gt;
+&lt;span class="o"&gt;(&lt;/span&gt;blog&lt;span class="o"&gt;)&lt;/span&gt; $ git push origin content
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And that's it for today! In another post I'll talk about how to automate the deploy process using Travis, stay tuned!&lt;/p&gt;</summary></entry></feed>
